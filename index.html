@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>warbunnie.com</title>
+  <head>
+    <title>warbunnie's site</title>
     <style>
-        body {
+      body {
         font-family: system-ui, sans-serif;
-        max-width: 700px;
-        margin: 80px auto;
-        padding: 0 20px;
-        line-height: 1.6;
-        background-color: #f9f9f9;
-        color: #222;
+        background-color: #f3f4f6;
+        margin: 0;
+        padding: 0;
       }
+
+      .sidebar {
+        width: 320px;
+        min-height: 100vh;
+        background-color: #ffffff;
+        padding: 60px 40px;
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04);
+        border-right: 1px solid #e5e7eb;
+      }
+
       h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 0.5em;
         color: #111;
       }
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5em;
-            color: #111;
+
       p {
-        font-size: 1.1rem;
-        margin-top: 0.5em;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-top: 1em;
+        color: #333;
       }
+
       a {
         color: #0066cc;
         text-decoration: none;
       }
+
       a:hover {
         text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .sidebar {
+          width: 100%;
+          border-right: none;
+          box-shadow: none;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>hi</h1>
-    <!-- <p>welcome</p>
-
-    <h2>contact</h2> -->
-    <p>you can reach me at: <a href="mailto:warbunnie@gmail.com">warbunnie@gmail.com</a></p>
-</body>
+    <div class="sidebar">
+      <h1>warbunnie</h1>
+      <p>you can reach me at: <a href="mailto:warbunnie1880@gmail.com">warbunnie1880@gmail.com</a></p>
+    </div>
+  </body>
 </html>
